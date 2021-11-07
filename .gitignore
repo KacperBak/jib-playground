@@ -1,0 +1,20 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+
+# Ignore IntelliJ IDEA settings
+.idea
+
+# Ignore VS code
+.vscode
+
+# Ignore Maven Target Dir
+dwplay/target/
+dwplay/bin/
+
+# Ignore eclipse specs
+dwplay/.classpath
+dwplay/.project
+dwplay/.settings/
