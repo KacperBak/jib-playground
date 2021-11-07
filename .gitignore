@@ -11,10 +11,10 @@ build
 .vscode
 
 # Ignore Maven Target Dir
-dwplay/target/
-dwplay/bin/
+target/
+bin/
 
 # Ignore eclipse specs
-dwplay/.classpath
-dwplay/.project
-dwplay/.settings/
+.classpath
+.project
+.settings/
