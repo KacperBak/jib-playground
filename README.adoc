@@ -1,0 +1,31 @@
+= README
+
+== config
+add config to `build.gradle`
+....
+jib {
+  from {
+    image = 'mcr.microsoft.com/openjdk/jdk:17-ubuntu'
+  }
+  to {
+    image = 'kacperbak/app'
+    auth {
+      username = USERNAME // Defined globally in ~/.gradle/gradle.properties
+      password = TOKEN    // Defined globally in ~/.gradle/gradle.properties
+    }
+    tags = ['latest']
+  }
+}
+....
+
+- https://github.com/GoogleContainerTools/jib/tree/master/jib-gradle-plugin#example[More detailed example]
+
+== build local docker image
+....
+./gradlew jibDockerBuild
+....
+
+== build and push to configures registry
+....
+./gradlew jib
+....
